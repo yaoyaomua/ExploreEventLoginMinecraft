@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnml>
+    <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+        <name>
+            <text>Petrinet</text>
+        </name>
+        <page id="n0">
+            <name>
+                <text />
+            </name>
+            <place id="n1">
+                <name>
+                    <text>([Receive Result Appeal from Prefecture],[Send for Credit Collection])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="d5165693-0517-49cf-8d62-9a01871ef120" />
+                <graphics>
+                    <position x="368.75" y="149.0" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n2">
+                <name>
+                    <text>([Create Fine],[Insert Date Appeal to Prefecture])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="a77e1617-06e3-4bc7-9de1-cb47a98d5cf8" />
+                <graphics>
+                    <position x="106.25" y="129.0" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n3">
+                <name>
+                    <text>([Notify Result Appeal to Offender],[Send for Credit Collection])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="ba81f054-69e3-4b10-8085-dc5a89b1a88e" />
+                <graphics>
+                    <position x="62.5" y="79.0" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n4">
+                <name>
+                    <text>([Appeal to Judge],[Send for Credit Collection])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="380eabe6-290e-4a3b-98d5-e28b670b2238" />
+                <graphics>
+                    <position x="368.75" y="79.0" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n5">
+                <name>
+                    <text>([Send Fine],[Insert Fine Notification])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="6ea08b81-015c-41f3-80cf-2d12b40ede4d" />
+                <graphics>
+                    <position x="193.75" y="141.5" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n6">
+                <name>
+                    <text>([Add penalty],[Send for Credit Collection])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="afcde252-0a5f-472f-bd87-0fdb16b283e1" />
+                <graphics>
+                    <position x="368.75" y="121.5" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n7">
+                <name>
+                    <text>([Insert Fine Notification],[Receive Result Appeal from Prefecture])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="6f19a5dd-8fdf-46fd-a617-72ec6d2ae502" />
+                <graphics>
+                    <position x="281.25" y="150.5" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n8">
+                <name>
+                    <text>([Create Fine],[Send Fine])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="3e06687c-3f54-448e-819b-ba8c72a9ec2a" />
+                <graphics>
+                    <position x="106.25" y="156.0" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n9">
+                <name>
+                    <text>([Insert Fine Notification],[Add penalty])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="d77b79c7-911a-48db-88ce-885536e0f218" />
+                <graphics>
+                    <position x="281.25" y="123.5" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n10">
+                <name>
+                    <text>([Insert Fine Notification, Create Fine],[Appeal to Judge])</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="4260867e-6da8-4bc0-941a-a7a0ef7fc00a" />
+                <graphics>
+                    <position x="281.25" y="96.5" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <place id="n11">
+                <name>
+                    <text>Start</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="23565ff0-c728-4f5b-9afd-fea2891bd20e" />
+                <graphics>
+                    <position x="12.5" y="128.0" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+                <initialMarking>
+                    <text>1</text>
+                </initialMarking>
+            </place>
+            <place id="n12">
+                <name>
+                    <text>End</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="ab2e7fda-e6f1-44ec-8a68-7852a1eaecc5" />
+                <graphics>
+                    <position x="456.25" y="147.0" />
+                    <dimension x="12.5" y="12.5" />
+                </graphics>
+            </place>
+            <transition id="n13">
+                <name>
+                    <text>Add penalty</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Add penalty" localNodeID="1e7b1f60-4bd5-4f14-b86c-01d2365e1733" />
+                <graphics>
+                    <position x="325.0" y="122.0" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n14">
+                <name>
+                    <text>Appeal to Judge</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Appeal to Judge" localNodeID="4e503d26-ea50-4f80-99dd-2bb7db328a59" />
+                <graphics>
+                    <position x="325.0" y="87.0" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n15">
+                <name>
+                    <text>Create Fine</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Create Fine" localNodeID="296d5ec0-413b-4b42-b9d9-b5b9587fc6d1" />
+                <graphics>
+                    <position x="62.5" y="128.0" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n16">
+                <name>
+                    <text>Insert Date Appeal to Prefecture</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Insert Date Appeal to Prefecture" localNodeID="984e2c52-5c00-4953-a627-26a43f8b35d4" />
+                <graphics>
+                    <position x="150.0" y="123.0" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n17">
+                <name>
+                    <text>Insert Fine Notification</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Insert Fine Notification" localNodeID="fcff88fa-191a-4f47-9162-b27ef05b7112" />
+                <graphics>
+                    <position x="237.5" y="128.0" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n18">
+                <name>
+                    <text>Notify Result Appeal to Offender</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Notify Result Appeal to Offender" localNodeID="b31d429c-94bd-40a6-a027-91517f7b5021" />
+                <graphics>
+                    <position x="12.5" y="68.5" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n19">
+                <name>
+                    <text>Payment</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Payment" localNodeID="ff0a61f1-6647-46e6-9a54-15d2548ad0f2" />
+                <graphics>
+                    <position x="12.5" y="203.5" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n20">
+                <name>
+                    <text>Receive Result Appeal from Prefecture</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Receive Result Appeal from Prefecture" localNodeID="68a9334e-ab6b-4d2a-9d0e-74d7f93cac02" />
+                <graphics>
+                    <position x="325.0" y="157.0" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n21">
+                <name>
+                    <text>Send Appeal to Prefecture</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Send Appeal to Prefecture" localNodeID="fb57c4f1-2a54-440d-bed9-068a22d5fb9c" />
+                <graphics>
+                    <position x="12.5" y="168.5" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n22">
+                <name>
+                    <text>Send Fine</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Send Fine" localNodeID="e4bd635b-184e-42ac-8998-d7e33b187d8b" />
+                <graphics>
+                    <position x="150.0" y="158.0" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <transition id="n23">
+                <name>
+                    <text>Send for Credit Collection</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" activity="Send for Credit Collection" localNodeID="31d920a7-04f6-4543-a01c-6ea8d3e81e3a" />
+                <graphics>
+                    <position x="412.5" y="94.5" />
+                    <dimension x="25.0" y="20.0" />
+                    <fill color="#FFFFFF" />
+                </graphics>
+            </transition>
+            <arc id="arc24" source="n10" target="n14">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="34aa87cb-4eb8-4402-afdc-5b6046867560" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc25" source="n17" target="n7">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="db23b372-a19d-45a7-9da3-e3633f2885f2" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc26" source="n21" target="n12">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="606b0b04-90f1-446f-af11-2772e514e684" />
+                <graphics>
+                    <position x="62.5" y="200.5" />
+                    <position x="106.25" y="200.5" />
+                    <position x="150.0" y="200.5" />
+                    <position x="193.75" y="200.5" />
+                    <position x="237.5" y="200.5" />
+                    <position x="281.25" y="200.5" />
+                    <position x="325.0" y="200.5" />
+                    <position x="368.75" y="200.5" />
+                    <position x="412.5" y="200.5" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc27" source="n18" target="n3">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="bf6910c6-bf8a-455b-9490-82624c81dc56" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc28" source="n6" target="n23">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="5eb66412-80e3-4f8a-a6e9-df65618eab6e" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc29" source="n4" target="n23">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="303e864d-0bca-4c5d-affd-2849a803950e" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc30" source="n15" target="n10">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="0d685cf7-a897-493c-aca0-e1e58c25cefe" />
+                <graphics>
+                    <position x="106.25" y="96.0" />
+                    <position x="150.0" y="96.0" />
+                    <position x="193.75" y="96.0" />
+                    <position x="237.5" y="96.0" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc31" source="n20" target="n1">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="96028a5e-9d2a-4fe6-81d8-a72194f75b92" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc32" source="n18" target="n12">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="693ee41d-62cf-4150-b762-973ddb137360" />
+                <graphics>
+                    <position x="62.5" y="43.0" />
+                    <position x="106.25" y="43.0" />
+                    <position x="150.0" y="43.0" />
+                    <position x="193.75" y="43.0" />
+                    <position x="237.5" y="43.0" />
+                    <position x="281.25" y="43.0" />
+                    <position x="325.0" y="43.0" />
+                    <position x="368.75" y="43.0" />
+                    <position x="412.5" y="43.0" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc33" source="n8" target="n22">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="b771f78c-7c04-4f3c-9338-e00ef8fa086b" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc34" source="n11" target="n15">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="16dc1ba6-d291-4b56-a206-9ccae76dbf7f" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc35" source="n23" target="n12">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="f91fa8cd-ab7e-45e8-8687-c218e68f73c8" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc36" source="n14" target="n12">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="7d6e95a0-5e2d-403d-a9ee-8b05981d9c99" />
+                <graphics>
+                    <position x="368.75" y="100.5" />
+                    <position x="412.5" y="119.5" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc37" source="n15" target="n2">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="2fa1bcdc-d8c5-47e3-9308-f4954248b6a9" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc38" source="n17" target="n10">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="77759153-b05c-454b-882a-5ed7631f2b24" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc39" source="n13" target="n6">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="c85f3205-12e3-47ab-96dd-9625b89c90e1" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc40" source="n19" target="n12">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="3a3050c8-2461-45ea-8782-576d4a1d2b33" />
+                <graphics>
+                    <position x="62.5" y="215.5" />
+                    <position x="106.25" y="215.5" />
+                    <position x="150.0" y="215.5" />
+                    <position x="193.75" y="215.5" />
+                    <position x="237.5" y="215.5" />
+                    <position x="281.25" y="215.5" />
+                    <position x="325.0" y="215.5" />
+                    <position x="368.75" y="215.5" />
+                    <position x="412.5" y="215.5" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc41" source="n2" target="n16">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="7322a277-cd19-49e3-aa16-a8ac8e59f274" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc42" source="n14" target="n4">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="5654281b-f624-4f52-85a1-0986a8c2d66d" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc43" source="n3" target="n23">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="93bb1624-c480-4221-8080-cc9f8837d9f6" />
+                <graphics>
+                    <position x="106.25" y="58.0" />
+                    <position x="150.0" y="58.0" />
+                    <position x="193.75" y="58.0" />
+                    <position x="237.5" y="58.0" />
+                    <position x="281.25" y="58.0" />
+                    <position x="325.0" y="58.0" />
+                    <position x="368.75" y="58.0" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc44" source="n22" target="n12">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="c22ff6a9-bb24-40a7-afb3-9554bdb9605e" />
+                <graphics>
+                    <position x="193.75" y="185.5" />
+                    <position x="237.5" y="185.5" />
+                    <position x="281.25" y="185.5" />
+                    <position x="325.0" y="185.5" />
+                    <position x="368.75" y="185.5" />
+                    <position x="412.5" y="185.5" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc45" source="n20" target="n12">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="96e16222-0552-41e3-afc9-0b14a9a3d4e4" />
+                <graphics>
+                    <position x="368.75" y="170.5" />
+                    <position x="412.5" y="170.5" />
+                </graphics>
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc46" source="n9" target="n13">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="76ff3f18-21b3-4ab1-ac58-d6d30536ed76" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc47" source="n15" target="n8">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="68114171-4305-44fa-985f-eadd04473f0d" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc48" source="n22" target="n5">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="fd65615a-ffe2-4d31-b2a0-bf28d5e99633" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc49" source="n1" target="n23">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="f864faf7-7bd1-4834-b918-735df27f08b2" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc50" source="n7" target="n20">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="84a0e2cb-0347-4bec-bff4-34532268e7e2" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc51" source="n5" target="n17">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="ba757a9c-6807-4fb4-83bd-d4528e10b67a" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+            <arc id="arc52" source="n17" target="n9">
+                <name>
+                    <text>1</text>
+                </name>
+                <toolspecific tool="ProM" version="6.4" localNodeID="7d24cc2c-b66d-4949-b180-acb217e9ee0e" />
+                <arctype>
+                    <text>normal</text>
+                </arctype>
+            </arc>
+        </page>
+        <finalmarkings />
+    </net>
+</pnml>
